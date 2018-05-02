@@ -1,3 +1,5 @@
+# Updated by Wei Cui, on May 2nd, 2018 for GitChat
+
 import hashlib
 import json
 from time import time
