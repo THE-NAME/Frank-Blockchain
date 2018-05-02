@@ -1,73 +1,9 @@
-# Learn Blockchains by Building One
+2018年四月以来，随着加密货币价格的回升，各种关于区块链的话题甚嚣尘上，各大媒体对其商业性质、技术原理、发展前景各个方面，都有各种非常深入的探讨。同时，新的项目、概念也层出不穷，让人眼花缭乱。笔者认为，“区块链”本质上还是一种软件算计/架构上的创新。只有自己搭建环境，编写代码，实现从建立账本到完成交易的全过程，才能真正体会区块链的精髓。
 
-[![Build Status](https://travis-ci.org/dvf/blockchain.svg?branch=master)](https://travis-ci.org/dvf/blockchain)
+<center>![比特币近十年来的价格逐波上升](http://images.gitbook.cn/f8b90ff0-4ccb-11e8-9d85-bdd8a53e41f6 "比特币价格趋势")
+比特币近十年来的价格逐波上升</center>
 
-This is the source code for my post on [Building a Blockchain](https://medium.com/p/117428612f46). 
+欢迎大家关注我的GitChat:[从零开始帮助您用 Python 打造自己的区块链](http://gitbook.cn/gitchat/activity/5ad72fb6cba61048ea6706d2)! 本场Chat
+的目的是，就是帮助广大的区块链爱好者或者开发人员，从零开始打造属于您自己的区块链应用。力求用最简单的语言，介绍这个最热门的技术，没有任何基础的读者也能按图索骥，一窥究竟，消除各种专家为其增添的很多迷思。
 
-## Installation
-
-1. Make sure [Python 3.6+](https://www.python.org/downloads/) is installed. 
-2. Install [pipenv](https://github.com/kennethreitz/pipenv). 
-
-```
-$ pip install pipenv 
-```
-
-3. Create a _virtual environment_ and specify the Python version to use. 
-
-```
-$ pipenv --python=python3.6
-```
-
-4. Install requirements.  
-
-```
-$ pipenv install 
-``` 
-
-5. Run the server:
-    * `$ pipenv run python blockchain.py` 
-    * `$ pipenv run python blockchain.py -p 5001`
-    * `$ pipenv run python blockchain.py --port 5002`
-    
-## Docker
-
-Another option for running this blockchain program is to use Docker.  Follow the instructions below to create a local Docker container:
-
-1. Clone this repository
-2. Build the docker container
-
-```
-$ docker build -t blockchain .
-```
-
-3. Run the container
-
-```
-$ docker run --rm -p 80:5000 blockchain
-```
-
-4. To add more instances, vary the public port number before the colon:
-
-```
-$ docker run --rm -p 81:5000 blockchain
-$ docker run --rm -p 82:5000 blockchain
-$ docker run --rm -p 83:5000 blockchain
-```
-
-## Installation (C# Implementation)
-
-1. Install a free copy of Visual Studio IDE (Community Edition):
-https://www.visualstudio.com/vs/
-
-2. Once installed, open the solution file (BlockChain.sln) using the File > Open > Project/Solution menu options within Visual Studio.
-
-3. From within the "Solution Explorer", right click the BlockChain.Console project and select the "Set As Startup Project" option.
-
-4. Click the "Start" button, or hit F5 to run. The program executes in a console window, and is controlled via HTTP with the same commands as the Python version.
-
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
+本文首先将介绍一些区块链的背景知识，而后将循序渐进地介绍在本地开发区块链应用所需要的模块和算法，做出一个简单的区块链交易程序。在此过程中，会穿插很多关于相关名字、术语、算法的解释。相关源代码都保存在本项目中，欢迎大家直接使用或者修改提交。
